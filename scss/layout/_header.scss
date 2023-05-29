@@ -1,0 +1,50 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+    text-align: center;
+    margin: 85px auto 76px;
+    color: v.$vDarkBlue;
+    max-width: 311px;
+
+    @include m.tablet {
+        max-width: 540px;
+        height: 168px;
+        margin: 80px auto 64px;
+    }
+
+    h1 {
+        font-weight: 275;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.166667px;
+
+        @include m.tablet {
+            font-size: 36px;
+            line-height: 54px;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.166667px;
+        margin-bottom: 13px;
+
+        @include m.tablet {
+            font-size: 36px;
+            line-height: 54px;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0.104167px;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,94 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenedor2 {
+    margin-bottom: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet {
+        max-width: 1110px;
+        height: 530px;
+        flex-direction: row;
+        margin: 0px auto 80px;
+        gap: 3rem;
+    }
+}
+
+div {
+    margin-bottom: 25px;
+    max-width: 311px;
+    height: 222px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    color: v.$vDarkBlue;
+    position: relative;
+
+    @include m.tablet {
+        max-width: 350px;
+        height: 250px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 27px 28px 0px;
+
+        @include m.tablet {
+            padding: 32px 32px 0px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.0902778px;
+        opacity: 0.5;
+        padding: 0px 29px;
+
+        @include m.tablet {
+            padding: 0px 32px;
+        }
+    }
+}
+
+.supervisor {
+    background-image: linear-gradient(to bottom, v.$cyan 3.55px, white 0px);
+}
+
+.tbuilder {
+    background-image: linear-gradient(to bottom, v.$red 3.55px, white 0px);
+}
+
+.karma {
+    background-image: linear-gradient(to bottom, v.$orange 3.55px, white 0px);
+}
+
+.calculator {
+    background-image: linear-gradient(to bottom, v.$blue 3.55px, white 0px);
+}
+
+@include m.tablet {
+    .medio {
+        flex-direction: column;
+    }
+}
+
+img {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    bottom: 28px;
+    right: 28px;
+
+    @include m.tablet {
+        width: 64px;
+        height: 64px;
+        bottom: 32px;
+        right: 32px;
+    }
+}
+
